@@ -1,16 +1,14 @@
 package cn.edu.bupt.sparsearray;
 
-public class SparseArray {
-    private int row, col, value;
-    private int[][] sparseArray;
+import java.io.Serializable;
 
-    public SparseArray() {
-    }
+public class SparseArray implements Serializable {
+    private int[][] sparseArray;
 
     public SparseArray(int[][] arr) {
         int sum = 0;
-        row=arr.length;
-        col=arr[0].length;
+        int row=arr.length;
+        int col=arr[0].length;
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
                 if (arr[i][j] != 0) {
@@ -37,31 +35,15 @@ public class SparseArray {
     }
 
     public int[][] convertToCommonArrary() {
-        return null;
+        return convertToCommonArrary(this.sparseArray);
     }
 
-    public int getRow() {
-        return row;
-    }
-
-    public void setRow(int row) {
-        this.row = row;
-    }
-
-    public int getCol() {
-        return col;
-    }
-
-    public void setCol(int col) {
-        this.col = col;
-    }
-
-    public int getValue() {
-        return value;
-    }
-
-    public void setValue(int value) {
-        this.value = value;
+    public static int[][] convertToCommonArrary(int[][] sparseArray) {
+        int arr[][]=new int[sparseArray[0][0]][sparseArray[0][1]];
+        for (int i=1;i<sparseArray.length;i++){
+            arr[sparseArray[i][0]][sparseArray[i][1]]=sparseArray[i][2];
+        }
+        return arr;
     }
 
     public int[][] getSparseArray() {
