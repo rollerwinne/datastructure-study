@@ -26,6 +26,7 @@
       <scope>test</scope>
     </dependency>
     <!-- https://mvnrepository.com/artifact/it.sauronsoftware/jave -->
+    <!-- 用于计算媒体文件时长的，自行下载安装的，中央仓库反正我没导入成功-->
     <dependency>
       <groupId>it.sauronsoftware</groupId>
       <artifactId>jave</artifactId>
