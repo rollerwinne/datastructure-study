@@ -1,4 +1,6 @@
-package cn.edu.bupt.p16_p29_linkedlist;
+package cn.edu.bupt.p16_p29_linkedlist.singleLinkedList;
+
+import cn.edu.bupt.p16_p29_linkedlist.Hero;
 
 public class SingleLinkedListDemo {
     public static void main(String[] args) {
@@ -32,7 +34,7 @@ public class SingleLinkedListDemo {
 //        HeroNode heroNode3 = new HeroNode(new Hero(3, "吴用", "智多星"));
 //        HeroNode heroNode4 = new HeroNode(new Hero(4, "林冲", "豹子头"));
 //
-//        SingleLinkedList singleLinkedList = new SingleLinkedList();
+//        singleLinkedList singleLinkedList = new singleLinkedList();
 //        singleLinkedList.addByOrderOld(heroNode4);
 //        singleLinkedList.addByOrderOld(heroNode4);
 //        singleLinkedList.addByOrderOld(heroNode1);
@@ -163,6 +165,6 @@ public class SingleLinkedListDemo {
 //            System.out.println("temp = " + temp+ "\thashCode"+ temp.hashCode());
 //            temp=temp.next;
 //        }
-        //new SingleLinkedList(newHead).list();
+        //new singleLinkedList(newHead).list();
     }
 }

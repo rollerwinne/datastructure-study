@@ -1,4 +1,4 @@
-package cn.edu.bupt.p16_p29_linkedlist;
+package cn.edu.bupt.p16_p29_linkedlist.singleLinkedList;
 
 import java.util.Stack;
 
