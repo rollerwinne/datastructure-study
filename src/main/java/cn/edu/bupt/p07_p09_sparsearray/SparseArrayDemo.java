@@ -7,7 +7,7 @@ import java.io.File;
  * https://github.com/rollerwinne/DataStructure
  *
  * 相比于韩老师的面向过程的写法，这里用的对象重写的稀疏数组类
- * @see com.atguigu.sparsearray.SparseArray
+ * @see com.atguigu.datastructure.sparsearray.SparseArray
  */
 public class SparseArrayDemo {
     public static void main(String[] args) {
