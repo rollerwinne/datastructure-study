@@ -1,4 +1,4 @@
-package cn.edu.bupt.p30_p41_stack;
+package cn.edu.bupt.p30_p42_stack;
 
 /**
  * 练习:链表实现栈
@@ -29,7 +29,7 @@ public class LinkedStack<T> implements Stack<T> {
 
     @Override
     public T pop() {
-        if (head.next==null){
+        if (head.next == null) {
             System.out.println("error:栈空");
             return null;
         }
@@ -40,7 +40,7 @@ public class LinkedStack<T> implements Stack<T> {
 
     @Override
     public T peek() {
-        if (head.next==null){
+        if (head.next == null) {
             System.out.println("error:栈空");
             return null;
         }

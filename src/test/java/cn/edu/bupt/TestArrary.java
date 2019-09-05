@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.util.Arrays;
 
-public class Test1 {
+public class TestArrary {
     @Test
     public void fun(){
         int[][] a=new int[2][3];

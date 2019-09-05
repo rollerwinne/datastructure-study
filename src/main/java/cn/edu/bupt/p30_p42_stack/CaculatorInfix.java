@@ -1,4 +1,4 @@
-package cn.edu.bupt.p30_p41_stack;
+package cn.edu.bupt.p30_p42_stack;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,7 +8,7 @@ import java.util.Map;
  *
  * @author mmc 502358401@qq.com
  */
-public class Caculator {
+public class CaculatorInfix {
 
     public static void main(String[] args) {
         int res = caculate("39-10*1-10*2+2*5*6");

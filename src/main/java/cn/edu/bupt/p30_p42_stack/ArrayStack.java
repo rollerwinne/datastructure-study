@@ -1,4 +1,4 @@
-package cn.edu.bupt.p30_p41_stack;
+package cn.edu.bupt.p30_p42_stack;
 
 /**
  * 区别于jdk中的Stack,这里是自定义栈,数组实现
@@ -85,7 +85,7 @@ public class ArrayStack<T> implements Stack<T> {
         int temp = top;
         String str = "";
         while (temp != -1) {
-            str += (arr[temp].toString()+",");
+            str += (arr[temp].toString() + ",");
             temp--;
         }
         return str;

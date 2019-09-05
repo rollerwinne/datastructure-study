@@ -1,4 +1,4 @@
-package cn.edu.bupt.p30_p41_stack;
+package cn.edu.bupt.p30_p42_stack;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,7 +11,7 @@ import java.util.Map;
  *
  * @author mmc 502358401@qq.com
  */
-public class CaculatorPro {
+public class CaculatorInfixPro {
 
     public static void main(String[] args) {
         int res = caculate("15-2*((20-3*3-2*2)-2)");
@@ -30,8 +30,8 @@ public class CaculatorPro {
     }
 
     public static int caculate(String expression) {
-        ArrayStack<Integer> numStack = new ArrayStack<>(20);
-        ArrayStack<Character> operStack = new ArrayStack<>(20);
+        Stack<Integer> numStack = new ArrayStack<>(20);
+        Stack<Character> operStack = new ArrayStack<>(20);
         char ch;//每次扫描的符号
         for (int index = 0; index < expression.length(); index++) {
             ch = expression.charAt(index);
@@ -121,6 +121,7 @@ public class CaculatorPro {
                 break;
             case '^':
                 res = (int) Math.pow(b, a);
+                break;
             default:
                 throw new RuntimeException("符号不支持");
         }

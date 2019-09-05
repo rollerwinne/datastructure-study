@@ -1,4 +1,4 @@
-package cn.edu.bupt.p30_p41_stack;
+package cn.edu.bupt.p30_p42_stack;
 
 import java.util.Scanner;
 
