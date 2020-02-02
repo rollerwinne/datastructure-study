@@ -2,6 +2,7 @@ package cn.edu.bupt.p043_p049_recurtion;
 
 /**
  * 尝试解八皇后问题,以失败告终
+ * 想着用二维数组表示棋盘,还是不好做回溯操作
  */
 public class QueenTry {
     private static int size = 8;

@@ -4,3 +4,9 @@
 .idea/
 *.iml
 /target
+
+# AUTO generate by VS code
+# about eclipse
+.settings
+.classpath
+.project
