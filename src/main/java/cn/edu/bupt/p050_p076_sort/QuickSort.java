@@ -23,7 +23,7 @@ public class QuickSort {
     public static void quickSort(int[] arr, int start, int end) {
         if (start >= end)
             return;
-        int i = start, j = end, base = arr[start];
+        int i = start, j = end, base = arr[start], temp;
         while (i < j) {
             while (arr[j] >= base && i < j) {
                 j--;
@@ -31,7 +31,7 @@ public class QuickSort {
             while (arr[i] <= base && i < j) {
                 i++;
             }
-            int temp = arr[i];
+            temp = arr[i];
             arr[i] = arr[j];
             arr[j] = temp;
         }
