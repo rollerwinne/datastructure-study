@@ -29,14 +29,13 @@ public class RadixSort {
         int length = (max + "").length();//最大数的位数
         int[][] bucket = new int[TEN][n];
         int[] index = new int[TEN];//记录有效数据的下标
-        int idx, num;//中间变量
+        int num;//中间变量
         for (int i = 1, pow = 1; i <= length; i++, pow *= 10) {
-            for (int a :arr) {
+            for (int a : arr) {
                 num = a / pow % 10;
                 bucket[num][index[num]++] = a;
             }
-            idx = 0;//arr的下标
-            for (int j = 0; j < TEN; j++) {//循环10个桶
+            for (int j = 0, idx = 0; j < TEN; j++) {//循环10个桶
                 for (int k = 0; k < index[j]; k++) {
                     arr[idx++] = bucket[j][k];
                 }

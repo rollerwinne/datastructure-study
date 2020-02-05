@@ -1,10 +1,6 @@
 package cn.edu.bupt.p050_p076_sort;
 
-public class Sort {
-    public static void main(String[] args) {
-
-    }
-
+public class SortUtils {
     /**
      * 冒泡排序
      */
@@ -52,5 +48,26 @@ public class Sort {
      */
     public static void radixSort(int[] arr) {
         RadixSort.radixSort(arr);
+    }
+
+    /**
+     * 计数排序
+     */
+    public static void countSort(int[] arr) {
+        CountSort.countSort(arr);
+    }
+
+    /**
+     * 桶排序
+     */
+    public static void bucketSort(int[] arr) {
+        BucketSort.bucketSort(arr, 10);//10个桶
+    }
+
+    /**
+     * 堆排序
+     */
+    public static void heapSort(int[] arr) {
+        HeapSort.heapSort(arr);
     }
 }

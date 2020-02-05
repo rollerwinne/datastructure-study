@@ -20,4 +20,11 @@ public class TestArrary {
         int[] b=new int[2];
         System.out.println(Arrays.equals(a,b));
     }
+
+    @Test
+    public void fun3(){
+        int[][] a=new int[10][];
+        a[9][0]=2;
+        System.out.println(a[9][1000]);
+    }
 }
