@@ -124,4 +124,28 @@ public class ShellSort {
             arr[insertIndex] = temp;
         }
     }
+
+    /**
+     * 希尔排序（移位）
+     *
+     * @param arr
+     */
+    public static <T extends Number> void shellSort(T[] arr) {
+        T temp;
+        for (int gap = arr.length / 2; gap > 0; gap /= 2) {
+            for (int i = gap; i < arr.length; i++) {
+                int insertIndex;
+                for (insertIndex = i - gap; insertIndex >= 0; insertIndex -= gap) {
+                    if (arr[insertIndex].longValue() < arr[i].longValue())
+                        break;
+                }
+                //insertIndex+=gap;//加上这句，则后面须有所调整
+                temp = arr[i];
+                for (int j = i - gap; j > insertIndex; j -= gap) {
+                    arr[j + gap] = arr[j];
+                }
+                arr[insertIndex + gap] = temp;
+            }
+        }
+    }
 }
