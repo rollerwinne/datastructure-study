@@ -126,7 +126,7 @@ public class ShellSort {
     }
 
     /**
-     * 希尔排序（移位）
+     * 带泛型的希尔排序（移位）
      *
      * @param arr
      */

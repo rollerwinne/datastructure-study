@@ -95,7 +95,7 @@ class EmployeeLinkedList {
             return true;
         }
         Employee temp = head;
-        while (temp.next != null) {
+        while (temp.next != null) { //为了少用一个变量记录前一个位置
             if (employee.id == temp.next.id) {
                 employee.next = temp.next.next;
                 temp.next = employee;
@@ -114,7 +114,7 @@ class EmployeeLinkedList {
             return true;
         }
         Employee temp = head;
-        while (temp.next != null) {
+        while (temp.next != null) { //为了少用一个变量记录前一个位置
             if (id == temp.next.id) {
                 temp.next = temp.next.next;
                 return true;
