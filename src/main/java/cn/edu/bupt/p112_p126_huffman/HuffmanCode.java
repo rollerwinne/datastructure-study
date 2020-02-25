@@ -233,15 +233,7 @@ public class HuffmanCode {
         return huffmanMap;
     }
 
-    public void setHuffmanMap(Map<Byte, String> huffmanMap) {
-        this.huffmanMap = huffmanMap;
-    }
-
     public int getBitLength() {
         return bitLength;
-    }
-
-    public void setBitLength(int bitLength) {
-        this.bitLength = bitLength;
     }
 }
