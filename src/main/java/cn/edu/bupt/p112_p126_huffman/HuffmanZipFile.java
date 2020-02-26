@@ -11,12 +11,15 @@ public class HuffmanZipFile {
     public static void main(String[] args) {
         URL url = HuffmanZipFile.class.getClassLoader().getResource("");
         String path = url.getPath();
-        File srcFile = new File(path, "bupt_logo.jpg");
-        File encodeFile = new File(path, "bupt_logo.encode.jpg");
-        File decodeFile = new File(path, "bupt_logo.decode.jpg");
+        // File srcFile = new File(path, "bupt_logo.jpg");
+        // File encodeFile = new File(path, "bupt_logo.encode.jpg");
+        // File decodeFile = new File(path, "bupt_logo.decode.jpg");
         // File srcFile = new File(path, "passage.txt");
         // File encodeFile = new File(path, "passage.encode");
         // File decodeFile = new File(path, "passage.decode.txt");
+        File srcFile = new File(path, "风景画.bmp");
+        File encodeFile = new File(path, "风景画.encode.bmp");
+        File decodeFile = new File(path, "风景画.decode.bmp");
 
         System.out.println(srcFile.getAbsolutePath());
         System.out.println("原文件大小: " + srcFile.length() + " Bytes");

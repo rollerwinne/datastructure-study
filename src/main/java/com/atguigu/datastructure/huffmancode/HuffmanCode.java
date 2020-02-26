@@ -58,7 +58,7 @@ public class HuffmanCode {
 		System.out.println("赫夫曼树");
 		Node huffmanTreeRoot = createHuffmanTree(nodes);
 		System.out.println("前序遍历");
-		huffmanTreeRoot.preOrder();
+		huffmanTreeRoot.inffixOrder();
 		
 		//测试一把是否生成了对应的赫夫曼编码
 		Map<Byte, String> huffmanCodes = getCodes(huffmanTreeRoot);

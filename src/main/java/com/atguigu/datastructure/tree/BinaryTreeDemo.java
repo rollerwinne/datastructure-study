@@ -21,7 +21,7 @@ public class BinaryTreeDemo {
 		
 		//测试
 //		System.out.println("前序遍历"); // 1,2,3,5,4
-//		binaryTree.preOrder();
+//		binaryTree.inffixOrder();
 		
 		//测试 
 //		System.out.println("中序遍历");

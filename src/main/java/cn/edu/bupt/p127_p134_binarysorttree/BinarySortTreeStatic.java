@@ -3,6 +3,10 @@ package cn.edu.bupt.p127_p134_binarysorttree;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * 写成静态方式还是很别扭
+ * 还是要将Node与Tree分开写
+ */
 public class BinarySortTreeStatic {
     public static void main(String[] args) {
         int[] arr = {7};

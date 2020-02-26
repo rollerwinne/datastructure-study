@@ -3,6 +3,9 @@ package cn.edu.bupt.p127_p134_binarysorttree;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * 二叉排序树/二叉搜索树/二叉查找树
+ */
 public class BinarySortTree {
     private Node root;
 
@@ -11,12 +14,17 @@ public class BinarySortTree {
         // int[] arr = {7, 3};
         BinarySortTree tree = new BinarySortTree();
         tree.createTree(arr);
-        tree.preOrder();
+        tree.inffixOrder();
         tree.delNode(7);
         System.out.println("-----");
-        tree.preOrder();
+        tree.inffixOrder();
     }
 
+    /**
+     * 删除二叉排序树的节点
+     *
+     * @param value
+     */
     public void delNode(int value) {
         if (root == null) //树空
             return;
@@ -84,6 +92,12 @@ public class BinarySortTree {
         return temp.value;
     }
 
+    /**
+     * 查找节点与父节点，返回到list中
+     *
+     * @param value
+     * @return
+     */
     private List<Node> searchParent(int value) {
         return this.searchParent(root, value, null);
     }
@@ -102,6 +116,12 @@ public class BinarySortTree {
         }
     }
 
+    /**
+     * 二叉排序树的查找
+     *
+     * @param value
+     * @return
+     */
     public Node search(int value) {
         return this.search(root, value);
     }
@@ -130,6 +150,11 @@ public class BinarySortTree {
         }
     }
 
+    /**
+     * 二叉排序树增加节点
+     *
+     * @param value
+     */
     public void add(int value) {
         if (root == null) {
             root = new Node(value);
@@ -156,16 +181,19 @@ public class BinarySortTree {
         }
     }
 
-    public void preOrder() {
-        this.preOrder(root);
+    /**
+     * 二叉排序树的中序遍历
+     */
+    public void inffixOrder() {
+        this.inffixOrder(root);
     }
 
-    private void preOrder(Node node) {
+    private void inffixOrder(Node node) {
         if (node == null)
             return;
-        preOrder(node.left);
+        inffixOrder(node.left);
         System.out.println(node);
-        preOrder(node.right);
+        inffixOrder(node.right);
     }
 
     private static class Node {
